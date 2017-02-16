@@ -21,8 +21,8 @@ function writeap()
     wifi.sta.getap(listap)
 end
 tmr.alarm(0,500,0,writeap)
-apCfg.ssid="ESPConfigTool"
-apCfg.pwd="espConfigTool"
+apCfg.ssid="sqowe initial setup"
+apCfg.pwd="sqowe"
 wifi.setmode(wifi.STATIONAP)
 wifi.ap.config(apCfg)
 file.close()
